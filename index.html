@@ -179,30 +179,31 @@
         <a href="#" class="button">Sužinoti daugiau</a>
     </div>
     
-    <!-- Pokalbių widget'o skriptas -->
-    <script type="text/javascript"> 
-        (function(d, t) {
-            var v = d.createElement(t),
-                s = d.getElementsByTagName(t)[0];
-            v.onload = function () {
-                if (!document.getElementById('root')) {
-                    var root = d.createElement('div');
-                    root.id = 'root';
-                    d.body.appendChild(root);
-                }  
-                if (window.myChatWidget &&
-                    typeof window.myChatWidget.load === 'function') { 
-                    window.myChatWidget.load({ 
-                        assistantId: 'afc3c5c1-60d8-44f1-be53-7f0d7aa75c27',
-                        apiKey: '73be0b1f-e4c1-46bd-80e6-9f00c9be0dab',
-                    });
-                }
-            }; 
-            v.src = "https://agentivehub.com/production.bundle.min.js"; 
-            v.type = "text/javascript";
-            s.parentNode.insertBefore(v, s);
-        })(document, 'script');
-    </script>
+<script type="text/javascript">
+  (function(d, t) {
+    var v = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+        
+    v.onload = function() {
+      if (!document.getElementById('root')) {
+        var root = d.createElement('div');
+        root.id = 'root';
+        d.body.appendChild(root);
+      }
+      
+      if (window.myChatWidget && typeof window.myChatWidget.load === 'function') {
+        window.myChatWidget.load({
+          id: '7e9efe5f-4a3d-4913-bec4-210e1678cea4',
+        });
+      }
+    };
+    
+    v.src = "https://agentivehub.com/production.bundle.min.js";
+    v.type = "text/javascript";
+    s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+
     
 </body>
 </html>
