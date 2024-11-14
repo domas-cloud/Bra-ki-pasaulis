@@ -6,27 +6,18 @@
    
 </head>
 <body>
-    <!-- Chatbot widget container -->
-    <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
-        <!-- TIXAE Agents widget rendering area -->
-    </div>
-
-    <!-- Chatbot widget script -->
-    <script defer>
-        (function() {
-            window.VG_CONFIG = {
-                ID: "fuu63tnry0gqetph", // Agent ID
-                region: 'eu', // Account region
-                render: 'bottom-right', // Position: 'full-width', 'bottom-left', 'bottom-right'
-                stylesheets: [
-                    "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
-                ],
-            };
-            var VG_SCRIPT = document.createElement("script");
-            VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
-            VG_SCRIPT.defer = true;
-            document.body.appendChild(VG_SCRIPT);
-        })()
-    </script>
+   <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '672f6af2905199c9a7d48f55' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
 </body>
 </html>
